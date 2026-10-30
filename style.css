@@ -1,0 +1,354 @@
+html{
+scroll-behavior:smooth;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#cca9c4;
+font-family:"Yu Gothic",sans-serif;
+color:#333;
+}
+
+#container{
+width:1200px;
+max-width:95%;
+margin:auto;
+}
+
+
+header{
+position:relative;
+margin-top:20px;
+background:linear-gradient(to right,#6a11cb,#2575fc);
+}
+
+header img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.header-text{
+position:absolute;
+left:50px;
+bottom:40px;
+color:white;
+text-shadow:2px 2px 5px black;
+}
+
+.header-text h1{
+font-size:45px;
+}
+
+
+
+.top-menu{
+background:#333;
+padding:10px 0;
+position:sticky;
+top:0;
+z-index:1000;
+margin-bottom:20px;
+}
+
+.menu{
+list-style:none;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.menu a{
+text-decoration:none;
+color:white;
+font-weight:bold;
+padding:10px 15px;
+border-radius:5px;
+transition:.3s;
+}
+
+.menu a:hover{
+background:rgb(215, 154, 154);
+color:#090909;
+}
+
+
+
+main{
+width:100%;
+}
+
+section{
+background:rgb(244,210,230);
+margin-bottom:20px;
+padding:25px;
+border-radius:10px;
+}
+
+section h2{
+border-left:8px solid #777;
+padding-left:10px;
+margin-bottom:20px;
+}
+
+
+
+#about{
+text-align:center;
+}
+
+.profile{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+display:block;
+margin:20px auto;
+}
+
+
+.gallery3{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.item{
+text-align:center;
+}
+
+.item img{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:50%;
+display:block;
+margin:auto;
+transition:.3s;
+}
+
+.item img:hover{
+transform:scale(1.05);
+}
+
+.item p{
+margin-top:10px;
+}
+
+.song-card{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card-song{
+background:#f5f5f5;
+padding:15px;
+text-align:center;
+border-radius:15px;
+}
+
+.card-song img{
+width:100%;
+max-width:250px;
+height:auto;
+margin:auto;
+display:block;
+border-radius:10px;
+}
+
+
+
+.gallery4{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+
+
+.game-gallery{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+.game{
+text-align:center;
+}
+
+.game img{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:15px;
+transition:.3s;
+}
+
+.game img:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #888;
+}
+
+.game p{
+margin-top:10px;
+font-weight:bold;
+}
+.project-card {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+
+.project-card img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    text-align: center;
+}
+
+.project-card ul {
+    margin-left: 20px;
+}
+
+ul{
+margin-left:25px;
+line-height:2;
+}
+
+.timeline{
+display:flex;
+gap:20px;
+}
+
+.step{
+flex:1;
+background:#ed55de;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.step h3{
+margin-bottom:10px;
+}
+
+
+
+footer{
+background:#d981b6;
+color:black;
+text-align:center;
+padding:20px;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+
+
+@media(max-width:900px){
+
+
+.gallery3{
+    grid-template-columns:1fr;
+}
+
+.gallery4{
+    grid-template-columns:1fr;
+}
+
+.song-card{
+    grid-template-columns:1fr;
+}
+
+.timeline{
+    flex-direction:column;
+}
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+header img{
+    height:220px;
+}
+
+.header-text{
+    left:20px;
+    bottom:20px;
+}
+
+.header-text h1{
+    font-size:28px;
+}
+
+.header-text p{
+    font-size:14px;
+}
+
+.menu{
+    gap:8px;
+}
+
+.menu a{
+    padding:8px 10px;
+    font-size:14px;
+}
+
+.gallery3,
+.gallery4,
+.song-card{
+    grid-template-columns:1fr;
+}
+
+.item,
+.card-song{
+    width:100%;
+    text-align:center;
+}
+
+.item img{
+    width:200px;
+    height:200px;
+    max-width:100%;
+}
+
+.card-song img{
+    max-width:220px;
+}
+
+.game img{
+    width:150px;
+    height:150px;
+}
+
+.timeline{
+    flex-direction:column;
+}
+
+section{
+    padding:15px;
+}
+
+
+}
